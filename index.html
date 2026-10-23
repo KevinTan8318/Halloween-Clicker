@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/Images/pumpkin-icon-16.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="Scripts/java.js"></script>
+    <script defer src="Scripts/shopSetup.js"></script>
+    <script defer src="Scripts/shopService.js"></script>
+    <script defer src="Scripts/rebirthService.js"></script>
+    <script defer src="Scripts/backgroundTween.js"></script>
+    <title>Halloween Clicker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img id="shopBtn" src="Images/shop.png" />
+    <img id="rebirthBtn" src="Images/rebirth.png" />
+    <img id="settingsBtn" src="Images/settings.png" />
+
+    <div id="clickDiv">
+      <h1 id="clickLabel">Clicks: 0.00</h1>
+      <img id="clickBtn" src="Images/click.png" />
+    </div>
+    <div id="container" class="shop-container">
+      <!-- <h1>SHOP</h1> -->
+      <ul class="product-grid">
+        <li class="product-card">
+          <h3>Trick or Treaters</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 25 Clicks</p>
+          <p class="price">+0.25 candy per second</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+        <li class="product-card">
+          <h3>Bowl of Candy</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 75 Clicks</p>
+          <p class="price">+1 candy per second</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+        <li class="product-card">
+          <h3>Classic Bag</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 150 Clicks</p>
+          <p class="price">+1 Click</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+
+        <li class="product-card">
+          <h3>Candy Shop</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 500 Clicks</p>
+          <p class="price">+10 candy per second</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+        <li class="product-card">
+          <h3>Candy Factory</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 2000 Clicks</p>
+          <p class="price">+50 candy per second</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+        <li class="product-card">
+          <h3>Candy Empire</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 10000 Clicks</p>
+          <p class="price">+250 candy per second</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+        <li class="product-card">
+          <h3>Duffle Bag</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 15000 Clicks</p>
+          <p class="price">+100 Click</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+        <li class="product-card">
+          <h3>Candyland</h3>
+          <img class="shopImages" src="Images/candy.jpg" />
+          <p class="price">Cost: 50000 Clicks</p>
+          <p class="price">+1000 Click</p>
+          <button class="buy-btn">Buy</button>
+        </li>
+      </ul>
+    </div>
+
+    <div id="rebirthContainer" class="shop-container">
+      <!-- <h1>SHOP</h1> -->
+      <ul class="product-grid">
+        <li class="rebirth-card">
+          <h1>Rebirth</h1>
+          <img id="rebirthImage" src="Images/rebirth.png" alt="" />
+          <h2>WARNING: By rebirthing, you will lose all your current data</h2>
+          <h3 class="price">Cost: 1M Clicks</h3>
+          <h3 class="price">x1.25 Multiplier</h3>
+          <button id="confirm-rebirth" class="buy-btn">Rebirth</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
